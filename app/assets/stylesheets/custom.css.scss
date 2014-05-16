@@ -31,6 +31,10 @@ textarea {
   resize: vertical;
 }
 
+.fright{
+  float: right;
+}
+
 .center {
   text-align: center;
 }
@@ -67,6 +71,9 @@ p {
 }
 
 /* header */
+.header_nav{
+  float: left;
+}
 
 #logo {
   float: left;
@@ -128,6 +135,11 @@ footer {
 
 /* sidebar */
 
+.user_info {
+  float: left;
+  height: 100%;
+}
+
 aside {
   section {
     padding: 10px 0;
@@ -157,6 +169,35 @@ aside {
 .gravatar {
   float: left;
   margin-right: 10px;
+}
+
+.stats {
+  overflow: auto;
+
+  a {
+    float: left;
+    padding: 0 10px;
+    border-left: 1px solid $grayLight;
+    coloer: gray;
+
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+
+    &:hover {
+      text-decoration: none;
+      coloer: $grayLight;
+    }
+  }
+
+  .user_avatars {
+    overflow: auto;
+    margin-top: 10px;
+    .gravatar {
+      margin: 1px 1px;
+    }
+  }
 }
 
 /* forms */
